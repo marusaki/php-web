@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 // Get modules need to use for main content by using $_GET
 $module = $_GET['m'];
