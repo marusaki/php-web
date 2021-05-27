@@ -44,7 +44,7 @@ $pageTitle = $pageTitles[$module];
 </header>
 <nav>
     <ul>
-        <li><a href="./index.php?m=home">Home</a></li>
+        <li><a href="./index.php?">Home</a></li>
         <li><a href="./index.php?m=profile">My Profile</a></li>
     </ul>
 </nav>
