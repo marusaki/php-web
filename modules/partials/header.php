@@ -56,7 +56,7 @@ $fullname = $user ? $user['fullname'] : 'Guest';
                 <?php if (!$user) { ?>
                     <li><a href="javascript:void(0)" onclick="showLoginForm()">Login</a></li>
                 <?php } else { ?>
-                    <li><a href="javascript:void(0)">Logout</a></li>
+                   <li><a href="javascript:void(0)">Logout</a></li>
                 <?php } ?>
             </ul>
 
@@ -74,10 +74,21 @@ $fullname = $user ? $user['fullname'] : 'Guest';
         </header>
 
         <!-- The menu -->
-        <nav>
+<!--        <nav>
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./index.php?m=register">Register</a></li>
                 <li><a href="./index.php?m=profile">My Profile</a></li>
+            </ul>
+        </nav>
+-->
+        <nav>
+            <ul>
+                <li><a href="./index.php">Home</a></li>
+                <?php if ($user == false) { ?>
+                <li><a href="./index.php?m=register">Register</a></li>
+                <?php } else { ?>
+                <li><a href="./index.php?m=profile">My Profile</a></li>
+                <?php } ?>
             </ul>
         </nav>
